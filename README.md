@@ -1,22 +1,22 @@
 # FlaskToDo
 
-Overview
+## Overview
 
 This project is a simple To-Do List application built with Flask and SQLite. It allows users to add, view, and delete tasks.
 
-Getting Started
+## Getting Started
 
 Follow these steps to set up and run the project on your local machine.
 
-Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
-Python 3.6 or higher
+- Python 3.6 or higher
 
-pip (Python package installer)
+- pip (Python package installer)
 
-Cloning the Repository
+1. Cloning the Repository
 
 Open your terminal (or Git Bash).
 
@@ -24,45 +24,47 @@ Navigate to the directory where you want to clone the repository.
 
 Run the following command:
 
-
+ ```bash
 git clone https://github.com/oWarren320/FlaskToDo.git
 
-Navigate into the project directory:
+2. Navigate into the project directory:
 
-cd your-repository-name
+cd FlaskToDo
 
-<b> Setting Up the Environment </b>
+## Setting Up the Environment
 
-Create a virtual environment (recommended):
+3. Create a virtual environment (recommended):
 
+ ```bash
 python -m venv venv
-Activate the virtual environment:
+
+4. Activate the virtual environment:
 
 On Windows:
 
-
+ ```bash
 venv\Scripts\activate
 
 On macOS/Linux:
-
+ ```bash
 source venv/bin/activate
 
-Install the required packages:
 
-pip install -r requirements.txt
 
-Running the Application
+5. Running the Application
 
 Initialize the database (if not already done):
 
+ ```bash
 flask db upgrade
 
 Run the Flask application:
 
+ ```bash
 flask run
 Open your web browser and navigate to http://127.0.0.1:5000 to view the application.
 
-Usage
-Add a Task: Enter your task text and click "Add".
-View Tasks: Tasks will be displayed in the list.
-Delete a Task: Click the "Delete" button next to the task you want to remove.
+## Usage
+1. Add a Task: Enter your task text and click "Add".
+2. View Tasks: Tasks will be displayed in the list.
+3. Delete a Task: Click the "Delete" button next to the task you want to remove.
