@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Todo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="text-center text-primary mb-4">Edit Todo Item</h1>
+                <form action="{{ url_for('edit', id=todo.id) }}" method="POST" class="form-group">
+                    <label for="todoitem">Edit your todo:</label>
+                    <input type="text" id="todoitem" name="todoitem" value="{{ todo.text }}" class="form-control form-control-lg mb-3" required>
+                    <button type="submit" class="btn btn-primary btn-lg">Update</button>
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary btn-lg ml-2">Back to Todo List</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
