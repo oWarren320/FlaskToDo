@@ -26,10 +26,13 @@ Run the following command:
 
  ```bash
 git clone https://github.com/oWarren320/FlaskToDo.git
+```
 
 2. Navigate into the project directory:
 
+ ```bash
 cd FlaskToDo
+```
 
 ## Setting Up the Environment
 
@@ -37,18 +40,18 @@ cd FlaskToDo
 
  ```bash
 python -m venv venv
-
+```
 4. Activate the virtual environment:
 
 On Windows:
 
  ```bash
 venv\Scripts\activate
-
+```
 On macOS/Linux:
  ```bash
 source venv/bin/activate
-
+```
 
 
 5. Running the Application
@@ -57,11 +60,12 @@ Initialize the database (if not already done):
 
  ```bash
 flask db upgrade
-
+```
 Run the Flask application:
 
  ```bash
 flask run
+```
 Open your web browser and navigate to http://127.0.0.1:5000 to view the application.
 
 ## Usage
